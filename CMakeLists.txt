@@ -48,10 +48,6 @@ set( SRCFILES
 	${CMAKE_CURRENT_SOURCE_DIR}/src/x86.S
 )
 
-if (NOT WIN32)
-	include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/include/bcrypt)
-endif()
-
 include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 add_library(
